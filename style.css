@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+*{
+   margin: 0;
+   padding: 0;   
+   font-family: 'Poppins';
+}
+h1,h2{
+   font-size: 36px;
+   font-weight: 700;
+}  
+
+a,p,span{
+   font-size: 18;
+   font-weight: 400;
+}
+
+a{
+   color: #04C0BA;
+}
+
+body{
+   min-height: 100vh;
+   min-width: 100vw;
+   background: url(./back.png);
+   background-size: cover;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container{
+   width: 860px;
+   height: 750px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.banner{
+   box-sizing: border-box;
+   color:white;
+   background: url(./galaxy.png);
+   background-size: cover;
+   padding: 90px 60px;
+}
+.banner__heading{
+   max-width: 220px;
+   line-height: 120%;
+   margin-bottom: 51px;
+}
+
+.form{
+   background: #F2F2F2;
+   padding: 90px 60px;
+}
+.form__heading{
+   line-height: 120%;
+}
+.form input, .form label{
+   display: block;
+}
+.form input{
+   box-sizing: border-box;
+   width: 100%;
+   background: transparent;
+   border: solid 1px #04C0BA;
+   border-radius: 5px;
+   font-size: 16px;
+   height: 40px;
+   padding: 10px;   
+}
+.form label{
+   margin-top: 20px;
+   margin-left: 5px;
+}
+.form label:first-of-type{
+   margin-top: 40px;
+}
+.form__submit-btn{
+   width: 100px;
+   height: 40px;
+   background: linear-gradient(77.33deg, #04C0BA 2.32%, #09EDE6 93.73%);
+   border-radius: 5px;
+   border:transparent;
+   font-size: 16px;
+   color: white;
+   margin-top: 40px;
+   float:right;
+}
+
+@media (max-width: 670px){
+
+   body{
+      background: #F2F2F2;
+      
+   }
+   .container{
+      grid-template-columns: 1fr;
+      
+   }
+   .banner{
+      display: none;
+      padding: 60px;
+   }
+}
