@@ -35,6 +35,7 @@ body{
    height: 750px;
    display: grid;
    grid-template-columns: 1fr 1fr;
+   box-shadow: 0 0 10px #000;
 }
 .banner{
    box-sizing: border-box;
@@ -96,7 +97,7 @@ body{
    }
    .container{
       grid-template-columns: 1fr;
-      
+      box-shadow: none;
    }
    .banner{
       display: none;
